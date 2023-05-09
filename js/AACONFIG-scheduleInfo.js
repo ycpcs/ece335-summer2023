@@ -3,7 +3,7 @@
 courseInfo.classPeriods = [
 	{
 		topic: new DoubleTopic("Lecture 1: Intro to Discrete Math", "lectures/lecture01.html","Lecture 2: Deductive Reasoning and Logical Connectives","lectures/lecture02.html"),
-		reading: "Intro. pg. 1-6, 1.1 pg. 8=13",
+		reading: "Intro. pg. 1-6, 1.1 pg. 8-13",
 	},
 ];
 
