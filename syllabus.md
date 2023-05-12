@@ -13,7 +13,7 @@ Instructor:
 - 101 - Dr. David Babcock, <dbabcock@ycp.edu>
 
 Office Hours:
-- **Dr. Babcock** - KEC 117A: by appointment
+- **Dr. Babcock** - KEC 117A: MW 3:00-4:00PM, or by appointment
 
 Course Description
 ------------------
