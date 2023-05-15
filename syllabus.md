@@ -73,8 +73,8 @@ Policies
 
 Your overall grade for the course will be determined as follows:
 
--   Reading quizzes: 10%
--   Homework assignments: 15%
+-   Reading quizzes: 5%
+-   Homework assignments: 20%
 -   Exams: 75% (25% each)
 
 Grades are assigned on a 100-point scale:
