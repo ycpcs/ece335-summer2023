@@ -41,10 +41,54 @@ courseInfo.classPeriods = [
 		reading: "3.2 pg. 95-106",
 	},
 	{
-		topic: new TripleTopic("Lecture 12: Proofs Involving Quantifiers","lectures/lecture12.html","Lecture 12 Practice Problem","handouts/lecture12/lecture12-handout.pdf","Lecture 12 Practice Problem Solution","handouts/lecture12/lecture12-handoutSol.pdf"),
-		reading: "3.3 pg. 108-121, 3.4 pg. 124-133",
+		topic: new FourTopic("Lecture 12: Proofs Involving Quantifiers","lectures/lecture12.html","Lecture 12 Practice Problem","handouts/lecture12/lecture12-handout.pdf","Lecture 12 Practice Problem Solution","handouts/lecture12/lecture12-handoutSol.pdf","Assignment 4 Due","assign/assign04.html"),
+		reading: "3.3 pg. 108-121",
 	},
-	
+// 4th of July Break
+	{
+		topic: new TripleTopic("Lecture 12: Proofs Involving Quantifiers cont.","lectures/lecture12.html","Lecture 12 Practice Problem","handouts/lecture12/lecture12-handout.pdf","Lecture 12 Practice Problem Solution","handouts/lecture12/lecture12-handoutSol.pdf"),
+		reading: "3.3 pg. 108-121",
+	},
+	{
+		topic: new TripleTopic("Lecture 13: Proofs Involving Conjunctions and Biconditionals","lectures/lecture13.html","Lecture 13 Practice Problem","handouts/lecture13/lecture13-handout.pdf","Lecture 13 Practice Problem Solution","handouts/lecture13/lecture13-handoutSol.pdf"),
+		reading: "3.4 pg. 124-133",
+	},
+	{
+		topic: new FourTopic("Lecture 14: Proofs Involving Disjunctions","lectures/lecture14.html","Lecture 14 Practice Problem","handouts/lecture14/lecture14-handout.pdf","Lecture 14 Practice Problem Solution","handouts/lecture14/lecture14-handoutSol.pdf", "Assignment 5 Due","assign/assign05.html"),
+		reading: "3.5 pg. 136-121",
+	},
+	{
+		topic: new Topic("** Exam 2", "")
+	},
+	{
+		topic: new TripleTopic("Lecture 16: Proof by Mathematical Induction","lectures/lecture16.html","Lecture 16 Practice Problem","handouts/lecture16/lecture16-handout.pdf","Lecture 16 Practice Problem Solution","handouts/lecture16/lecture16-handoutSol.pdf"),
+		reading: "6.1 pg. 260-265",
+	},
+	{
+		topic: new TripleTopic("Lecture 17: Recursion","lectures/lecture17.html","Lecture 17 Practice Problem","handouts/lecture17/lecture17-handout.pdf","Lecture 17 Practice Problem Solution","handouts/lecture17/lecture17-handoutSol.pdf"),
+		reading: "6.3 pg. 279-285",
+	},
+//	{
+//		topic: new TripleTopic("Lecture 18: Relations","lectures/lecture18.html","Lecture //18 Practice Problem","handouts/lecture18/lecture18-handout.pdf","Lecture 18 Practice //Problem Solution","handouts/lecture18/lecture18-handoutSol.pdf"),
+//		reading: "4.1-4.3 pg. 163-186",
+//	},
+	{
+		topic: new FourTopic("Lecture 19: Functions","lectures/lecture19.html","Lecture 20: Function Properties","lectures/lecture20.html", "Lecture 20 Practice Problem","handouts/lecture20/lecture20-handout.pdf","Lecture 20 Practice Problem Solution","handouts/lecture20/lecture20-handoutSol.pdf"),
+		reading: "5.1 pg. 226-233, 5.2-5.3 pg. 236-252",
+	},
+	{
+		topic: new DoubleTopic("Exam 3 Review", "", "Assignment 6 Due","assign/assign06.html")
+	},
+	{
+		topic: new Topic("** Exam 3", "")
+	},
+	{
+		topic: new Topic("Final Exam Review", "")
+	},
+	{
+		topic: new Topic("** Final Exam", "")
+	},
+
 ];
 
 // The following is for the college-scheduled final exam.

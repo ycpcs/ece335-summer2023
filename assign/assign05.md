@@ -3,7 +3,7 @@ layout: default
 title: "Assignment 5"
 ---
 
-**Due: Wednesday, July 17th in class** Late assignments will be penalized 20% per day.
+**Due: Wednesday, July 12th in class** Late assignments will be penalized 20% per day.
 
 Book Questions from *How To Prove It - 2nd ed.*
 ===============================================
