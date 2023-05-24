@@ -274,7 +274,7 @@ Taking the difference with *A* and applying logical equivalences gives
 
 Giving
 
-    *A* \\ *B*
+> *A* \\ *B*
 
 **Theorem**
 
