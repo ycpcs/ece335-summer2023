@@ -33,39 +33,39 @@ courseInfo.classPeriods = [
 		reading: "2.3 pg. 73-81",
 	},
 	{
-		topic: new FiveTopic("Lecture 10: Proof Strategies", "lectures/lecture10.html","Lecture 11: Proofs Involving Negations and Conditionals","lectures/lecture11.html","Lecture 10 Practice Problem","handouts/lecture10/lecture10-handout.pdf","Lecture 10 Practice Problem Solution","handouts/lecture10/lecture10-handoutSol.pdf","Assignment 3 Due","assign/assign03.html"),
+		topic: new TripleTopic("Lecture 10: Proof Strategies", "lectures/lecture10.html","Lecture 11: Proofs Involving Negations and Conditionals","lectures/lecture11.html", "Assignment 3 Due","assign/assign03.html"),
 		reading: "3.1 pg. 84-93, 3.2 pg. 95-106",
 	},
 	{
-		topic: new TripleTopic("Lecture 11: Proofs Involving Negations and Conditionals cont.","lectures/lecture11.html","Lecture 11 Practice Problem","handouts/lecture11/lecture11-handout.pdf","Lecture 11 Practice Problem Solution","handouts/lecture11/lecture11-handoutSol.pdf"),
+		topic: new Topic("Lecture 11: Proofs Involving Negations and Conditionals cont.","lectures/lecture11.html"),
 		reading: "3.2 pg. 95-106",
 	},
 	{
-		topic: new FourTopic("Lecture 12: Proofs Involving Quantifiers","lectures/lecture12.html","Lecture 12 Practice Problem","handouts/lecture12/lecture12-handout.pdf","Lecture 12 Practice Problem Solution","handouts/lecture12/lecture12-handoutSol.pdf","Assignment 4 Due","assign/assign04.html"),
+		topic: new DoubleTopic("Lecture 12: Proofs Involving Quantifiers","lectures/lecture12.html", "Assignment 4 Due","assign/assign04.html"),
 		reading: "3.3 pg. 108-121",
 	},
 // 4th of July Break
 	{
-		topic: new TripleTopic("Lecture 12: Proofs Involving Quantifiers cont.","lectures/lecture12.html","Lecture 12 Practice Problem","handouts/lecture12/lecture12-handout.pdf","Lecture 12 Practice Problem Solution","handouts/lecture12/lecture12-handoutSol.pdf"),
+		topic: new Topic("Lecture 12: Proofs Involving Quantifiers cont.","lectures/lecture12.html"),
 		reading: "3.3 pg. 108-121",
 	},
 	{
-		topic: new TripleTopic("Lecture 13: Proofs Involving Conjunctions and Biconditionals","lectures/lecture13.html","Lecture 13 Practice Problem","handouts/lecture13/lecture13-handout.pdf","Lecture 13 Practice Problem Solution","handouts/lecture13/lecture13-handoutSol.pdf"),
+		topic: new Topic("Lecture 13: Proofs Involving Conjunctions and Biconditionals","lectures/lecture13.html"),
 		reading: "3.4 pg. 124-133",
 	},
 	{
-		topic: new FourTopic("Lecture 14: Proofs Involving Disjunctions","lectures/lecture14.html","Lecture 14 Practice Problem","handouts/lecture14/lecture14-handout.pdf","Lecture 14 Practice Problem Solution","handouts/lecture14/lecture14-handoutSol.pdf", "Assignment 5 Due","assign/assign05.html"),
+		topic: new DoubleTopic("Lecture 14: Proofs Involving Disjunctions","lectures/lecture14.html", "Assignment 5 Due","assign/assign05.html"),
 		reading: "3.5 pg. 136-121",
 	},
 	{
 		topic: new Topic("** Exam 2", "")
 	},
 	{
-		topic: new TripleTopic("Lecture 16: Proof by Mathematical Induction","lectures/lecture16.html","Lecture 16 Practice Problem","handouts/lecture16/lecture16-handout.pdf","Lecture 16 Practice Problem Solution","handouts/lecture16/lecture16-handoutSol.pdf"),
+		topic: new Topic("Lecture 16: Proof by Mathematical Induction","lectures/lecture16.html"),
 		reading: "6.1 pg. 260-265",
 	},
 	{
-		topic: new TripleTopic("Lecture 17: Recursion","lectures/lecture17.html","Lecture 17 Practice Problem","handouts/lecture17/lecture17-handout.pdf","Lecture 17 Practice Problem Solution","handouts/lecture17/lecture17-handoutSol.pdf"),
+		topic: new Topic("Lecture 17: Recursion","lectures/lecture17.html"),
 		reading: "6.3 pg. 279-285",
 	},
 //	{
@@ -73,7 +73,7 @@ courseInfo.classPeriods = [
 //		reading: "4.1-4.3 pg. 163-186",
 //	},
 	{
-		topic: new FourTopic("Lecture 19: Functions","lectures/lecture19.html","Lecture 20: Function Properties","lectures/lecture20.html", "Lecture 20 Practice Problem","handouts/lecture20/lecture20-handout.pdf","Lecture 20 Practice Problem Solution","handouts/lecture20/lecture20-handoutSol.pdf"),
+		topic: new DoubleTopic("Lecture 19: Functions","lectures/lecture19.html","Lecture 20: Function Properties","lectures/lecture20.html"),
 		reading: "5.1 pg. 226-233, 5.2-5.3 pg. 236-252",
 	},
 	{
