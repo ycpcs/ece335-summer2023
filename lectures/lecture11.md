@@ -161,7 +161,7 @@ the assumption is incorrect and *a* ∈ *C*.
 
 Thus the formal proof would be
 
-> **Theorem.** Suppose *A* ⊆ *B, *a* ∈ *A*, and *a* ∉ *B* \\ *C*.
+> **Theorem.** Suppose *A* ⊆ *B*, *a* ∈ *A*, and *a* ∉ *B* \\ *C*.
 > Then *a* ∈ *C*.
 >
 > *Proof.* 
