@@ -202,10 +202,10 @@ Formally,
 >
 > *Proof.* Using induction:
 >
-> *Base Case:* Letting *n* = 5, clearly 2<sup>n</sup> = 2<sup>5</sup> = 32 \> *n*<sup>2</sup> = 5<sup>2<sup> = 25. Thus 2<sup>n</sup> \> *n*<sup>2<sup> for *n* = 5.
+> *Base Case:* Letting *n* = 5, clearly 2<sup>n</sup> = 2<sup>5</sup> = 32 \> *n*<sup>2</sup> = 5<sup>2</sup> = 25. Thus 2<sup>n</sup> \> *n*<sup>2</sup> for *n* = 5.
 >
 > *Induction Step:* Let *n* be an arbitrary natural number greater than
-> 5 and assume that 2<sup>n</sup> \> *n*<sup>2</sup>. Since *n* \> 5, clearly *n*<sup>2<sup> = (*n*)(*n*) \> 5*n*. Thus
+> 5 and assume that 2<sup>n</sup> \> *n*<sup>2</sup>. Since *n* \> 5, clearly *n*<sup>2</sup> = (*n*)(*n*) \> 5*n*. Thus
 >
 > > 2<sup>n+1</sup> = 2 ⋅ 2<sup>n</sup>
 > >
