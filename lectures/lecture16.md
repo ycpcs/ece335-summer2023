@@ -24,21 +24,28 @@ Induction Goals
  
 > > \[Proof of ∀*n* ∈ ℕ (*P(n)* → *P(n+1)*) goes here.\]
 
-Hence, proofs by induction can be written as 5 steps:
+Hence, proofs by induction can be written as 6 steps:
 
-1. Write the induction given closed form for *n*.
+0. Write the induction given closed form for *n*.
+1. Write the induction goal closed form for *n+1* (simply substitute *n+1* for *n* in the given from step 0)
 2. Show the induction given is true for a base case, typically *n* = 0.
-3. Write the induction goal closed form for *n+1* (simply substitute *n+1* for *n* in the given from step 1), and factor the induction formula for *n+1* to include the induction formula for *n* (from step 1).
-4. We will **assume** the induction formula from step 1 is true, i.e. we will use the conditional proof technique from [lecture 10](lecture10.html), and substitute the closed form solution into step 3. 
-5. Perform any necessary algebra to show the closed form solution from step 3 for *n+1*.
+3. Factor the induction formula for *n+1* from step 1 to include the induction formula for *n* from step 0.
+4. We will **assume** the induction formula from step 0 is true, i.e. we will use the conditional proof technique from [lecture 10](lecture10.html), and substitute the closed form solution from step 0 into step 3. 
+5. Perform any necessary algebra to achieve the closed form solution from step 1 for *n+1*.
 
 **Example 1**
 
 > Prove that for every natural number *n*, 2<sup>0</sup> + 2<sup>1</sup> + \... + 2<sup>n</sup> = 2<sup>n+1</sup> - 1.
 
-*Step 1:* Write the induction given closed form for *n*
+*Step 0:* Write the induction given closed form for *n*
 
 > ∑2<sup>i</sup> = 2<sup>n+1</sup> -1
+
+*Step 1:* Write the induction goal closed form for *n*+1
+
+> Substituting *n*+1 for *n* in step 1 gives
+
+> 2<sup>0</sup> + 2<sup>1</sup> + \... + 2<sup>n</sup> + 2<sup>n+1</sup> = 2<sup>n+2</sup> - 1.
 
 *Step 2:* Show the induction given is true for a base case.
 
@@ -46,23 +53,17 @@ Hence, proofs by induction can be written as 5 steps:
 
 > 2<sup>0</sup> = 1 and 2<sup>1</sup> - 1 = 2 - 1 = 1.
 
-*Step 3:* Write the induction goal closed form for *n*+1
-
-> Substituting *n*+1 for *n* in step 1 gives
-
-> 2<sup>0</sup> + 2<sup>1</sup> + \... + 2<sup>n</sup> + 2<sup>n+1</sup> = 2<sup>n+2<sup> - 1.
-
-> We see that the induction given is simply the first *n* terms of the induction goal, thus
+*Step 3* We see that the induction given in step 0 is simply the first *n* terms of the induction goal in step 1, thus
 
 > 2<sup>0</sup> + 2<sup>1</sup> + \... + 2<sup>n</sup> + 2<sup>n+1</sup> = (2<sup>0</sup> + 2<sup>1</sup> + \... + 2<sup>n</sup>) + 2<sup>n+1</sup> = ∑2<sup>i</sup> + 2<sup>n+1</sup>
 
-*Step 4:* Assume the induction formula from step 1 is true and substitute the closed form solution into step 3.
+*Step 4:* Assume the induction formula from step 0 is true and substitute the closed form solution into step 3.
 
 > Therefore we *assume* ∑2<sup>i</sup> = 2<sup>n+1</sup> - 1 is true, thus substituting gives
 
 > ∑2<sup>i</sup> + 2<sup>n+1</sup> = (2<sup>n+1</sup> - 1) + 2<sup>n+1</sup>
 
-*Step 5:* Perform any necessary algebra to show the closed form solution from step 3 for *n*+1
+*Step 5:* Perform any necessary algebra to show the closed form solution from step 1 for *n*+1
 
 > (2<sup>n+1</sup> - 1) + 2<sup>n+1</sup> = 2 ⋅ 2<sup>n+1</sup> - 1
 > > = 2<sup>n+2</sup> - 1
@@ -91,31 +92,31 @@ Formally,
 
 > Prove that for all *n* ∈ ℕ, 0 + 1 + 2 + \... + *n* = *n*(*n* + 1)/2.
 
-*Step 1:* Write the induction given closed form for *n*
+*Step 0:* Write the induction given closed form for *n*
 
 > 0 + 1 + 2 + \... + *n* = ∑i = *n*(*n* + 1)/2
 
-*Step 2:* Show the induction given is true for a base case.
-
-> The base case for *n* = 0 gives ∑i = 0 and 0(1)/2 = 0.
-
-*Step 3:* Write the induction goal closed form for *n*+1
+*Step 1:* Write the induction goal closed form for *n*+1
 
 > Substituting *n*+1 for *n* in step 1 gives
 
 > 0 + 1 + 2 + \... + *n* + (*n* + 1) = (*n* + 1)((*n*+1)+1)/2 = (*n*+1)(*n*+2)/2
 
-> We see that the induction given is simply the first *n* terms of the induction goal, thus
+*Step 2:* Show the induction given is true for a base case.
+
+> The base case for *n* = 0 gives ∑i = 0 and 0(1)/2 = 0.
+
+*Step 3:* We see that the induction given in step 0 is simply the first *n* terms of the induction goal in step 1, thus
 
 > 0 + 1 + 2 + \... + *n* + *n* + 1 = (0 + 1 + 2 + \... + *n*) + (*n* + 1) = ∑i + (*n* + 1)
 
-*Step 4:*  Assume the induction formula from step 1 is true and substitute the closed form solution into step 3.
+*Step 4:*  Assume the induction formula from step 0 is true and substitute the closed form solution into step 3.
 
 > Therefore we *assume* ∑i = *n*(*n* + 1)/2 is true, thus substituting gives
 
 > ∑i + (*n* + 1) = *n*(*n* + 1)/2 + (*n* + 1)
 
-*Step 5:* Perform any necessary algebra to show the closed form solution from step 3 for *n*+1
+*Step 5:* Perform any necessary algebra to show the closed form solution from step 2 for *n*+1
 
 > ∑i + (*n* + 1) = *n*(*n* + 1)/2 + (*n* + 1)
 > > = (*n* + 1)(*n*/2 + 1)
@@ -146,9 +147,13 @@ Formally,
 
 > Prove that for sufficiently large *n*, that 2<sup>n</sup> \> *n*<sup>2</sup>.
 
-*Step 1:* Write the induction given closed form for *n*
+*Step 0:* Write the induction given closed form for *n*
 
 > For sufficiently large *n*, 2<sup>n</sup> \> *n*<sup>2</sup>
+
+*Step 1:* Write the induction goal closed form for *n*+1
+
+> 2<sup>n+1</sup> \> (*n*+1)<sup>2</sup>
 
 *Step 2:* Show the induction given is true for a base case.
 
@@ -156,21 +161,17 @@ Formally,
 2, 2<sup>2</sup> = 4 = 2<sup>2</sup> and for *n* = 3, 2<sup>3</sup> = 8 < 3<sup>2</sup> = 9. Furthermore for *n* = 4, 2<sup>4</sup> = 16 = 4<sup>2</sup>.
 However for *n* = 5, 2<sup>5</sup> = 32 > 5<sup>2</sup> = 25. Thus while the theorem is *not* true *for all* *n* ∈ ℕ, it may be true for *n* ≥ 5.
 
-*Step 3:* Write the induction goal closed form for *n*+1
-
-> 2<sup>n+1</sup> \> (*n*+1)<sup>2</sup>
-
-> We see that the induction goal can be factored to include the induction given, thus
+*Step 3:* We see that the induction goal can be factored to include the induction given, thus
 
 > 2<sup>n+1</sup> = 2 ⋅ 2<sup>n</sup>
 
-*Step 4:*  Assume the induction formula from step 1 is true and substitute the closed form solution into step 3.
+*Step 4:*  Assume the induction formula from step 0 is true and substitute the closed form solution into step 3.
 
 > Therefore we *assume* 2<sup>n</sup> \> *n*<sup>2</sup> is true, thus substituting gives
 
 > 2 ⋅ 2<sup>n</sup> \> 2 ⋅ *n*<sup>2<sup>
 
-*Step 5:* Perform any necessary algebra to show the closed form solution from step 3 for *n*+1
+*Step 5:* Perform any necessary algebra to show the closed form solution from step 1 for *n*+1
 
 > At this point we now need to show 2 ⋅ *n*<sup>2</sup> \> (*n*+1)<sup>2</sup> 
 
