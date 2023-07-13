@@ -26,6 +26,7 @@ Induction Goals
 
 Hence, proofs by induction can be written as 6 steps:
 
+{:start="0"}
 0. Write the induction given closed form for *n*.
 1. Write the induction goal closed form for *n+1* (simply substitute *n+1* for *n* in the given from step 0)
 2. Show the induction given is true for a base case, typically *n* = 0.
