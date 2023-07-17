@@ -86,25 +86,29 @@ Since both of these functions are defined recursively (note
 exponentiation is simply repeated multiplication) we will attempt to
 construct the proof using induction.
 
-*Step 1:* Write the induction given closed form for *n*
+*Step 0:* Write the induction given closed form for *n*
 
 > *n*! \> 2<sup>n</sup>
+
+*Step 1:* Write the induction goal closed form for *n*+1
+
+> (*n* + 1)! \> 2<sup>n+1</sup>
 
 *Step 2:* Show the induction given is true for a base case
 
 > Clearly for *n* = 4, *n*! = 24 \> 2<sup>4</sup> = 16.
 
-*Step 3:* Write the induction goal closed form for *n*+1
+*Step 3:* Factor the induction goal to include the induction given
 
-> (*n* + 1)! = (*n* + 1) ⋅ *n*! \> 2<sup>n+1</sup>
+> (*n* + 1)! = (*n* + 1) ⋅ *n*!
 
-*Step 4:* Assume the induction formula from step 1 is true and substitute the closed form solution into step 3.
+*Step 4:* Assume the induction formula from step 0 is true and substitute the closed form solution into step 3.
 
 > Therefore we *assume* *n*! \> 2<sup>n</sup>. Then
 
 > (*n* + 1) ⋅ *n*! \> (*n* + 1) ⋅ 2<sup>n</sup>
 
-*Step 5:* Perform any necessary algebra to show the closed form solution from step 3 for *n*+1
+*Step 5:* Perform any necessary algebra to show the closed form solution from step 1 for *n*+1
 
 > (*n* + 1) ⋅ 2<sup>n</sup> \> 2 ⋅ 2<sup>n</sup>     (since (*n* + 1) \> 2 for *n* \> 4)
 > > = 2<sup>n+1</sup>
@@ -135,25 +139,29 @@ Creating a table of values gives
 Hence we can guess a formula of the form *a*<sub>n</sub> = 2<sup>n</sup> - (n+1). To prove
 this guess is correct we will use induction.
 
-*Step 1:* Write the induction given closed form for *n*
+*Step 0:* Write the induction given closed form for *n*
 
 > *a*<sub>n</sub> = 2<sup>n</sup> - (n+1)
+
+*Step 1:* Write the induction goal closed form for *n*+1
+
+> *a*<sub>n+1</sub> = 2<sup>n+1</sup> - ((n+1) + 1) = 2<sup>n+1</sup> - (n+2)
 
 *Step 2:* Show the induction given is true for a base case
 
 > For *n* = 0, 2<sup>0</sup> - (0+1) = 1 - 1 = 0.
 
-*Step 3:* Write the induction goal closed form for *n*+1
+*Step 3:* Factor the induction goal to include the induction given. **Note:** This is simply the *recursive* formula
 
-> *a*<sub>n+1</sub> = 2*a*<sub>n</sub> + n = 2<sup>n+1</sup> - ((n+1) + 1) = 2<sup>n+1</sup> - (n+2)
+> *a*<sub>n+1</sub> = 2*a*<sub>n</sub> + n
 
-*Step 4:* Assume the induction formula from step 1 is true and substitute the closed form solution into step 3.
+*Step 4:* Assume the induction formula from step 0 is true and substitute the closed form solution into step 3.
 
 > Therefore we *assume* *a*<sub>n</sub> = 2<sup>n</sup> - (n+1). Then
 
-> 2*a*<sub>n</sub> + n = 2(2<sup>n</sup> - (n+1)) + n = 2<sup>n+1</sup> - (n+2)
+> 2*a*<sub>n</sub> + n = 2(2<sup>n</sup> - (n+1)) + n
 
-*Step 5:* Perform any necessary algebra to show the closed form solution from step 3 for *n*+1
+*Step 5:* Perform any necessary algebra to show the closed form solution from step 1 for *n*+1
 
 > 2(2<sup>n</sup> - (n+1)) + n = 2<sup>n+1</sup> - 2*n* - 2 + n
 > > = 2<sup>n+1</sup> - *n* - 1 - 1
