@@ -98,7 +98,7 @@ construct the proof using induction.
 
 > Clearly for *n* = 4, *n*! = 24 \> 2<sup>4</sup> = 16.
 
-*Step 3:* Factor the induction goal to include the induction given
+*Step 3:* Factor the induction goal to include the induction given. **Note:** This is simply the *recursive* formula.
 
 > (*n* + 1)! = (*n* + 1) ⋅ *n*!
 
